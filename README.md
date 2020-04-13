@@ -1,6 +1,6 @@
 Small project to retrieve Finland music events from Ticketmaster API.
 
-It can change the country Code and the apy key to use it for another country and keys
+It can change the country Code and the apy key to use it for another country and keys (inside code)
 
 - Using React, Redux with Typescript and Jest with Enzyme for unit test
 
