@@ -1,0 +1,33 @@
+@import "./Mixin.scss";
+
+.genre {
+  padding-top: 60px;
+  margin-left: -10px;
+  @include xs {
+    text-align: center;
+  }
+  &__list {
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    width: auto;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__show-more {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    &__button {
+      color: rgba(255, 255, 255, 0.7);
+      padding: 7px;
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}

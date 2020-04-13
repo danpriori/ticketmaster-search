@@ -1,0 +1,23 @@
+@import "./Mixin.scss";
+
+.genre-item {
+  display: inline-block;
+  width: auto;
+  margin: 0px 10px 0px 10px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 35px;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+  @include xs {
+    display: block;
+    border: 1px solid;
+    padding: 10px;
+    line-height: 25px;
+  }
+}
+
+.genre-selected {
+  color: #fec017;
+}

@@ -1,0 +1,33 @@
+@import "./Mixin.scss";
+
+.event-item {
+  width: 305px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 8px 15px 8px;
+  flex-grow: 1;
+  &__event-thumb {
+    img {
+      width: 305px;
+      height: 225px;
+      @include xs {
+        width: 245px;
+        height: 205px;
+      }
+    }
+    :hover {
+      cursor: pointer;
+    }
+    &__arrow::after {
+      content: "";
+      position: relative;
+      bottom: 100%;
+      left: -50%;
+      z-index: 102;
+      margin-left: -5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #252b40 transparent;
+    }
+  }
+}

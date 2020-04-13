@@ -1,0 +1,33 @@
+@import "./Mixin.scss";
+
+.header {
+  width: auto;
+  min-height: 168px;
+  color: white;
+  background-color: #252b40;
+  padding: 20px 32px 10px 32px;
+  @include xs {
+    padding: 20px 15px 10px 15px;
+  }
+  &__main-title {
+    display: inline-block;
+    padding-top: 10px;
+    width: 300px;
+    height: 48px;
+    font-size: 40px;
+    line-height: 48px;
+    @include sm {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    @include xs {
+      font-size: 30px;
+      line-height: 48px;
+      text-align: left;
+      margin-left: 20px;
+    }
+  }
+}

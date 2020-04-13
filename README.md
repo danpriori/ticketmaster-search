@@ -1,10 +1,12 @@
-Small project to retrieve data from Deezer API such as Artists and Albums, parse it and show the content
+Small project to retrieve Finland music events from Ticketmaster API.
 
-- Using React, Redux with Typescript
+It can change the country Code and the apy key to use it for another country and keys
+
+- Using React, Redux with Typescript and Jest with Enzyme for unit test
 
 ## Live Demo
 
-[Demo](https://ticketmaster-search--danpriori.repl.co/)
+[Demo](https://ticketmaster-search-events--danpriori.repl.co/)
 
 ## Available Scripts
 

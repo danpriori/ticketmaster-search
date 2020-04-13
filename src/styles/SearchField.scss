@@ -1,0 +1,48 @@
+@import "./Mixin.scss";
+
+.searchfield {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  padding-top: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  @include sm {
+    display: block;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__search-input {
+    background-color: white;
+    border: 0;
+    color: #8a8a8a;
+    max-width: 336px;
+    min-width: 200px;
+    height: 40px;
+    padding: 0 50px;
+    font-size: 18px;
+    @include xs {
+      width: 166px;
+      min-width: 100px;
+      padding: 0px 0px 0px 50px;
+    }
+    &::placeholder {
+      @include xs {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__search-icon {
+    position: relative;
+    top: 5px;
+    left: 35px;
+    width: 24px;
+    height: 24px;
+  }
+  &__search-input:focus {
+    outline: none;
+  }
+}
